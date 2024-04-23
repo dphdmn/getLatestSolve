@@ -38,4 +38,5 @@ def compress_array_to_string(input_array):
     base64_encoded_string = base64.b64encode(compressed_data).decode()
     return encodeURIComponent(base64_encoded_string)
     
-print("https://dphdmn.github.io/betterLeaderboard/?r=" +compress_array_to_string([solution,row_map['tps'],scramble, sequence]))
+print("Short link (no moveTiems, use that if link is too large): https://dphdmn.github.io/betterLeaderboard/?r=" +compress_array_to_string([solution,row_map['tps'],scramble, -1]))
+print("MoveTimes accurate: https://dphdmn.github.io/betterLeaderboard/?r=" +compress_array_to_string([solution,row_map['tps'],scramble, sequence]))
